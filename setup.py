@@ -23,8 +23,8 @@ setup(name='pywunderground',
     version='0.1',
     license='LGPLv3',
     description='Simple interface to retrieve weather data from wunderground',
-    long_description=open('README.md').read() + '\n\n' +
-                     open('NEWS.md').read(),
+    long_description=open('README.rst').read() + '\n\n' +
+                     open('NEWS.rst').read(),
     classifiers=['Development Status :: 4 - Beta',
         'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
         'Intended Audience :: Developers',
