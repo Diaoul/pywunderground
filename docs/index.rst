@@ -22,8 +22,6 @@ List cities
 
 Listing cities in *France* with name *Paris*
 
-::
-
     >>> cities = pywunderground.autocomplete('Paris', 'FR')
     >>> cities
     [{u'c': u'FR', u'tz': u'Europe/Paris', u'name': u'Paris, France', u'tzs': u'CET', u'l': u'/q/zmw:00000.1.07157', u'type': u'city', u'zmw': u'00000.1.07157'}, {u'c': u'FR', u'tz': u'Europe/Paris', u'name': u'Paris Le Bourget, France', u'tzs': u'CET', u'l': u'/q/zmw:00000.1.07150', u'type': u'city', u'zmw': u'00000.1.07150'}, {u'c': u'FR', u'tz': u'Europe/Paris', u'name': u'Paris Orly, France', u'tzs': u'CET', u'l': u'/q/zmw:00000.1.07149', u'type': u'city', u'zmw': u'00000.1.07149'}, {u'c': u'FR', u'tz': u'Europe/Paris', u'name': u'Paris-Plage, France', u'tzs': u'CET', u'l': u'/q/zmw:00000.6.07003', u'type': u'city', u'zmw': u'00000.6.07003'}]
@@ -32,8 +30,6 @@ Get the weather
 ---------------
 
 Get the current condition and forecast for *Paris* in *France*
-
-::
 
     >>> weather = pywunderground.request('yourapikey', ['conditions', 'forecast'], 'Paris')
     >>> weather
