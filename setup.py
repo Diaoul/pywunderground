@@ -17,10 +17,10 @@
 # You should have received a copy of the Lesser GNU General Public License
 # along with pywunderground.  If not, see <http://www.gnu.org/licenses/>.
 from setuptools import setup
-
+execfile('pywunderground/infos.py')
 
 setup(name='pywunderground',
-    version='0.1',
+    version=__version__,
     license='LGPLv3',
     description='Simple interface to retrieve weather data from wunderground',
     long_description=open('README.rst').read() + '\n\n' +
@@ -36,5 +36,5 @@ setup(name='pywunderground',
     author='Antoine Bertin',
     author_email='diaoulael@gmail.com',
     url='https://github.com/Diaoul/pywunderground',
-    py_modules=['pywunderground'],
+    packages=['pywunderground'],
     install_requires=['requests>=0.9.1'])

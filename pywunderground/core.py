@@ -20,6 +20,9 @@ import json
 from urllib import quote
 
 
+__all__ = ['FEATURES', 'autocomplete', 'request']
+
+
 #: Available API request features
 FEATURES = ['geolookup', 'conditions', 'forecast', 'astronomy', 'radar', 'satellite', 'webcams', 'history',
             'alerts', 'hourly', 'hourly7day', 'forecast7day', 'yesterday', 'autocomplete', 'almanac', 'lang']
