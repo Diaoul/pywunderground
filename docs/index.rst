@@ -40,5 +40,9 @@ API Documentation
 
 More details about the use of the module can be found here
 
-.. automodule:: pywunderground
+.. note::
+
+    :mod:`pywunderground.core` is included in :mod:`pywunderground`
+
+.. automodule:: pywunderground.core
     :members:
