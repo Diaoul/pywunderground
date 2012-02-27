@@ -19,6 +19,7 @@
 from setuptools import setup
 execfile('pywunderground/infos.py')
 
+
 setup(name='pywunderground',
     version=__version__,
     license='LGPLv3',

@@ -78,12 +78,11 @@ def request(key, features, query, timeout=5):
 
 def _unicode(string):
     """Try to convert a string to unicode using different encodings"""
-    fallback = 'utf-8'
     for encoding in ['utf-8', 'latin1']:
         try:
             result = unicode(string, encoding)
             return result
         except UnicodeDecodeError:
             pass
-    result = unicode(string, fallback, 'replace')
+    result = unicode(string, 'utf-8', 'replace')
     return result
