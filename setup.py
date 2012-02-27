@@ -38,4 +38,4 @@ setup(name='pywunderground',
     author_email='diaoulael@gmail.com',
     url='https://github.com/Diaoul/pywunderground',
     packages=['pywunderground'],
-    install_requires=['requests>=0.9.1'])
+    install_requires=['requests>=0.10.6'])
